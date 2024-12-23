@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_english_books"
+        android:title="English Books" />
+    <item
+        android:id="@+id/nav_marathi_books"
+        android:title="Marathi Books" />
+    <item
+        android:id="@+id/nav_hindi_books"
+        android:title="Hindi Books" />
+    <item
+        android:id="@+id/nav_lifestyle"
+        android:title="Lifestyle" />
+</menu>

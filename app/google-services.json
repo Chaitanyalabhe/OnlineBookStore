@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "360376864476",
+    "project_id": "onlinebookstore5",
+    "storage_bucket": "onlinebookstore5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360376864476:android:99c9372149ccc68189ee19",
+        "android_client_info": {
+          "package_name": "com.example.onlinebookstore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtvm-gAC6Ek1hDrQHbjPHeYHdqKh_QcRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

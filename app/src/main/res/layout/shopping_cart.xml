@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E2E2E2">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Bookmark Title -->
+        <TextView
+            android:id="@+id/backSC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="&lt; Back"
+            android:textColor="#6B6B6B"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Cart Icon -->
+
+        <ImageButton
+            android:id="@+id/cartbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Shopping Cart"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:paddingLeft="80dp"
+            android:src="@drawable/shop_cart" />
+
+        <TextView
+            android:id="@+id/shopping_cart_title"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="Shopping Cart"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Instruction Text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#CACACA"
+        android:gravity="center_vertical">
+
+        <!-- Truck Image -->
+        <ImageView
+            android:id="@+id/truck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/truck"
+            android:contentDescription="Truck" />
+
+        <!-- Instruction Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Please choose the item you want to buy."
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="start" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- first Cart Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="8dp">
+
+                <!-- Checkbox -->
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp" />
+
+                <!-- Product Image -->
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Product Image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/book_harrypotter1" />
+
+                <!-- Product Details -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harry Potter:"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Philosopher's Stone"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="4dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="J.K Rowling"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs179.90"
+                        android:textSize="16sp"
+                        android:textColor="#FF0000"
+                        android:layout_marginTop="8dp" />
+
+                    <!-- Quantity Controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <!-- Decrease Button -->
+                        <Button
+                            android:id="@+id/decreaseButton1"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:text="-"
+                            android:textSize="13sp" />
+
+                        <!-- Quantity Text -->
+                        <TextView
+                            android:id="@+id/quantityText1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:textSize="18sp" />
+
+                        <!-- Increase Button -->
+                        <Button
+                            android:id="@+id/increaseButton1"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:text="+"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Delete Icon -->
+                <ImageButton
+                    android:id="@+id/deleteButton1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/delete"
+                    android:contentDescription="Delete"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#777777"
+                android:layout_marginVertical="16dp" />
+
+            <!-- Repeat for other items in the cart -->
+
+            <!-- second Cart Item -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:elevation="2dp"
+                android:layout_marginBottom="8dp">
+
+                <!-- Checkbox -->
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp" />
+
+                <!-- Product Image -->
+                <ImageView
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:contentDescription="Product Image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lawak_kampus_39" />
+
+                <!-- Product Details -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harry Potter:"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Philosopher's Stone"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:layout_marginTop="4dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="J.K Rowling"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs179.90"
+                        android:textSize="16sp"
+                        android:textColor="#FF0000"
+                        android:layout_marginTop="8dp" />
+
+                    <!-- Quantity Controls -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <!-- Decrease Button -->
+                        <Button
+                            android:id="@+id/decreaseButton2"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:text="-"
+                            android:textSize="13sp"
+                            tools:ignore="DuplicateIds" />
+
+                        <!-- Quantity Text -->
+                        <TextView
+                            android:id="@+id/quantityText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:textSize="18sp" />
+
+                        <!-- Increase Button -->
+                        <Button
+                            android:id="@+id/increaseButton2"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:text="+"
+                            android:textSize="13sp"
+                            tools:ignore="DuplicateIds" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- Delete Icon -->
+                <ImageButton
+                    android:id="@+id/deleteButton2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/delete"
+                    android:contentDescription="Delete"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#777777"
+                android:layout_marginVertical="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Checkout Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <!-- Select All Checkbox -->
+        <CheckBox
+            android:id="@+id/selectAllCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp" />
+
+        <!-- Subtotal Section -->
+        <LinearLayout
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Subtotal Text -->
+            <TextView
+                android:id="@+id/subtotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subtotal:"
+                android:paddingLeft="120dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Subtotal Amount -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs100.00"
+                android:paddingLeft="120dp"
+                android:textColor="#FF0000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Checkout Button -->
+        <Button
+            android:id="@+id/checkoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Out"
+            android:textColor="#FFFFFF"
+            android:background="#D32F2F"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

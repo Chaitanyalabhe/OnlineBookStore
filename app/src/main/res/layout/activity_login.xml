@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/mainHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lets Log you in"
+        android:textColor="@android:color/black"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"/>
+
+    <!-- Sub-heading -->
+    <TextView
+        android:id="@+id/subHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back,"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:layout_below="@id/mainHeading"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/subHeading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have been missed"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:layout_below="@id/subHeading"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Email, Phone & Username Input -->
+    <EditText
+        android:id="@+id/emailPhoneUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email, phone, username"
+        android:layout_below="@id/subHeading2"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailPhoneUsername"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <!-- Forgot Password -->
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/password"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Log in Button -->
+    <Button
+        android:id="@+id/logInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:layout_below="@id/forgotPassword"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"/>
+
+    <!-- Divider with OR and lines -->
+    <LinearLayout
+        android:id="@+id/orDividerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/logInButton"
+        android:layout_marginTop="16dp">
+
+        <!-- Left line -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"/>
+
+        <!-- OR Text -->
+        <TextView
+            android:id="@+id/dividerOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="8dp"/>
+
+        <!-- Right line -->
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <!-- Social Media Icons -->
+
+    <!-- Sign in Link -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orDividerLayout"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Google Icon -->
+        <ImageView
+            android:id="@+id/googleIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Google Logo"
+            android:src="@drawable/google_logo" />
+
+        <!-- Facebook Icon -->
+        <ImageView
+            android:id="@+id/facebookIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Facebook Logo"
+            android:src="@drawable/facebook_logo" />
+
+        <!-- Apple Icon -->
+        <ImageView
+            android:id="@+id/appleIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="Apple Logo"
+            android:src="@drawable/apple_logo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="138dp"
+        android:text="Don't have an account?"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/signInLink"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="138dp"
+        android:layout_toEndOf="@+id/dha"
+        android:text="Sign in"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="NotSibling" />
+
+</RelativeLayout>

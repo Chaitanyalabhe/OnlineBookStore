@@ -1,0 +1,108 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Onlinebookstore"
+        tools:targetApi="31"
+        tools:ignore="ExtraText">
+
+        <!-- Welcome Activity (Launcher Activity) -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- SignIn Activity (No launcher intent here) -->
+        <activity android:name=".SignInActivity"
+            android:exported="true">
+        </activity>
+
+        <activity android:name=".LoginActivity"
+            android:exported="true">
+        </activity>
+
+        <!-- Homepage Activity -->
+        <activity android:name=".Homepage"
+            android:exported="true">
+        </activity>
+
+        <!-- ShoppingCart -->
+        <activity android:name=".ShoppingCart"
+            android:exported="true">
+        </activity>
+
+        <!-- Profile -->
+        <activity android:name=".Profile"
+            android:exported="true">
+        </activity>
+
+        <!-- Bookmark -->
+        <activity android:name=".Bookmark"
+            android:exported="true">
+        </activity>
+
+        <!-- Categories -->
+        <activity android:name=".Categories"
+            android:exported="true">
+        </activity>
+
+        <!-- Checkout -->
+        <activity android:name=".Checkout"
+            android:exported="true">
+        </activity>
+
+        <!-- BookAir -->
+        <activity android:name=".BookAir"
+            android:exported="true">
+        </activity>
+
+        <!-- BookHarryGreen -->
+        <activity android:name=".BookHarryGreen"
+            android:exported="true">
+        </activity>
+
+        <!-- BookHarryPurple -->
+        <activity android:name=".BookHarryPurple"
+            android:exported="true">
+        </activity>
+
+        <!-- BookHarryRed -->
+        <activity android:name=".BookHarryRed"
+            android:exported="true">
+        </activity>
+
+        <!-- BookLawakKampus39 -->
+        <activity android:name=".BookLawakKampus39"
+            android:exported="true">
+        </activity>
+
+        <!-- BookLawakKampus40 -->
+        <activity android:name=".BookLawakKampus40"
+            android:exported="true">
+        </activity>
+
+        <!-- BookSappiens1 -->
+        <activity android:name=".BookSappiens1"
+            android:exported="true">
+        </activity>
+
+        <!-- BookSappiens2 -->
+        <activity android:name=".BookSappiens2"
+            android:exported="true">
+        </activity>
+
+    </application>
+</manifest>
